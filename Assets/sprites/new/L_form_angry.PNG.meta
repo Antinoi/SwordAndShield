@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      L_form_angry_0: 8490240539443759924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

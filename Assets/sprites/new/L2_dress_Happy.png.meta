@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      L2_dress_Happy_0: 5451625747294124988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
