@@ -25,20 +25,9 @@ public class GameManager : MonoBehaviour
             return;
         }
     }
-    void Update()
-    {
-        // Проверяем, была ли нажата клавиша "R"
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Restart();
-        }
-    }
+    
 
-    void Restart()
-    {
-        // Загружаем текущую сцену снова
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+   
 
     public void EnemyKilled()
     {

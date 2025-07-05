@@ -19,7 +19,7 @@ public class WaitForSoundToEnd : MonoBehaviour
 
     void OnMusicEnd()
     {
-        Debug.Log("Музыка закончилась! Запускаем действие.");
+       
         GameManager.Instance.EnemyKilled();
     }
 }
