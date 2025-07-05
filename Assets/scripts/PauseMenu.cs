@@ -19,9 +19,9 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("нажата" + isPaused);
+            
 
-            if (!isPaused)
+            if (isPaused)
             {
                 
                 ResumeGame();
@@ -38,7 +38,7 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        Debug.Log("вызов меню");
+      
         pauseMenu?.SetActive(true);
         dialogueCanvas?.SetActive(false);
         Time.timeScale = 0f;
@@ -55,12 +55,14 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
+        Time.timeScale = 1f;
         // Загружаем текущую сцену снова
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Exit()
     {
+        Time.timeScale = 1f;
         // Загружаем текущую сцену снова
         SceneManager.LoadScene("before");
     }
